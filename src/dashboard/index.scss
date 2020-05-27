@@ -1,5 +1,10 @@
 .dashboard {
-  margin: 3rem 0;
+  padding: 2.5rem 5%;
+  font-size: $font-size;
+  font-family: $family;
+  font-weight: $bold;
+  color: $very-dark-blue;
+  background-color: $white;
 
   header {
     margin-bottom: 3rem;
@@ -38,12 +43,37 @@
           border-radius: 100%;
         }
       }
-      .dark-mode-toggle.on {
-        justify-content: flex-start;
-        background-image: $dark-theme;
-        .dark-mode-button {
-          background-color: $very-dark-blue;
-        }
+    }
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
+
+.dashboard.dark {
+  color: $white;
+  background-color: $very-dark-blue;
+
+  .title {
+    p {
+      color: $desaturated-blue;
+    }
+  }
+
+  .dark-mode {
+    border-top: 1px solid $desaturated-blue;
+    color: $desaturated-blue;
+
+    .dark-mode-toggle {
+      justify-content: flex-start;
+      background-image: $dark-theme;
+      .dark-mode-button {
+        background-color: $very-dark-blue;
       }
     }
   }

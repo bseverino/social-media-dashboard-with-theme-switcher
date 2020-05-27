@@ -1,10 +1,11 @@
 import React from 'react'
 
 import FollowerCards from './follower-cards'
+import OverviewCards from './overview-cards'
 
 function Dashboard() {
   return (
-    <div className='dashboard'>
+    <div className='dashboard dark'>
       <header>
         <div className='title'>
           <h1>Social Media Dashboard</h1>
@@ -19,9 +20,9 @@ function Dashboard() {
       </header>
       <main>
         <FollowerCards />
-        <h2>Overview - Today</h2>
+        <OverviewCards />
       </main>
-      <footer>
+      <footer className='attribution'>
         Challenge by{' '}
         <a href='https://www.frontendmentor.io?ref=challenge'>
           Frontend Mentor

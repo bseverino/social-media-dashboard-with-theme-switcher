@@ -1,4 +1,5 @@
 @import 'variables';
 @import 'global';
-@import 'dashboard/dashboard.scss';
-@import 'dashboard/follower-cards/follower-card.scss';
+@import 'dashboard/index.scss';
+@import 'dashboard/follower-cards';
+@import 'dashboard/overview-cards';
