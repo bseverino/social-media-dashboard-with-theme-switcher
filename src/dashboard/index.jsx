@@ -4,14 +4,17 @@ import FollowerCard from './follower-card'
 
 function Dashboard() {
   return (
-    <>
+    <div className='dashboard'>
       <header>
-        <div>
+        <div className='title'>
           <h1>Social Media Dashboard</h1>
           <p>Total Followers: 23,004</p>
         </div>
-        <div>
-          <p>Dark Mode</p>
+        <div className='dark-mode'>
+          <label>Dark Mode</label>
+          <div className='dark-mode-toggle'>
+            <div className='dark-mode-button' />
+          </div>
         </div>
       </header>
       <main>
@@ -25,7 +28,7 @@ function Dashboard() {
         </a>
         . Coded by <a href='https://bseverino.com'>Bianca Severino</a>.
       </footer>
-    </>
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@ import upArrow from '../img/icon-up.svg'
 
 function FollowerCard(props) {
   return (
-    <div className='card-wrapper'>
+    <div className='card-wrapper facebook'>
       <div className='follower-card'>
         <header>
           <img src={facebookIcon} className='social-icon' />
@@ -14,7 +14,7 @@ function FollowerCard(props) {
           1987
           <span>followers</span>
         </section>
-        <footer>
+        <footer className='increase'>
           <img src={upArrow} /> 12 Today
         </footer>
       </div>

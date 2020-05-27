@@ -1,10 +1,8 @@
 .card-wrapper {
   display: flex;
   align-items: flex-end;
-  background-color: $facebook;
   height: 23rem;
   width: 35rem;
-  max-width: 90%;
   border-radius: 7px;
 
   .follower-card {
@@ -16,7 +14,6 @@
     height: 22.5rem;
     width: 100%;
     border-radius: 0 0 7px 7px;
-    // padding: 3rem;
 
     header {
       display: flex;
@@ -46,5 +43,38 @@
         text-transform: uppercase;
       }
     }
+
+    footer {
+      display: flex;
+      align-items: center;
+
+      img {
+        padding-right: 0.3rem;
+      }
+    }
+
+    footer.increase {
+      color: $lime-green;
+    }
+
+    footer.decrease {
+      color: $bright-red;
+    }
   }
+}
+
+.card-wrapper.facebook {
+  background-color: $facebook;
+}
+
+.card-wrapper.twitter {
+  background-color: $twitter;
+}
+
+.card-wrapper.instagram {
+  background-color: $instagram;
+}
+
+.card-wrapper.youtube {
+  background-color: $youtube;
 }
