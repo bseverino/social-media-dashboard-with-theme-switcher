@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $font-size;
+  font-family: $family;
+  font-weight: $bold;
+  color: $very-dark-blue;
+}
