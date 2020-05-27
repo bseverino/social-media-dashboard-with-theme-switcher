@@ -3,6 +3,7 @@
   align-items: flex-end;
   height: 23rem;
   width: 35rem;
+  margin-bottom: 3rem;
   border-radius: 7px;
 
   .follower-card {
@@ -15,7 +16,7 @@
     width: 100%;
     border-radius: 0 0 7px 7px;
 
-    header {
+    .card-header {
       display: flex;
       align-items: center;
 
@@ -72,7 +73,7 @@
 }
 
 .card-wrapper.instagram {
-  background-color: $instagram;
+  background-image: $instagram;
 }
 
 .card-wrapper.youtube {

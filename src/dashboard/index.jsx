@@ -1,6 +1,6 @@
 import React from 'react'
 
-import FollowerCard from './follower-card'
+import FollowerCards from './follower-cards'
 
 function Dashboard() {
   return (
@@ -18,7 +18,7 @@ function Dashboard() {
         </div>
       </header>
       <main>
-        <FollowerCard />
+        <FollowerCards />
         <h2>Overview - Today</h2>
       </main>
       <footer>
