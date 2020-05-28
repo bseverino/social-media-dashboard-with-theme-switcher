@@ -14,10 +14,10 @@ function FollowerCard({ data }) {
           />
           <div className='social-handle'>{data.handle}</div>
         </div>
-        <section>
+        <div className='follower-count'>
           {data.count}
           <span>{data.site === 'youtube' ? 'subscribers' : 'followers'}</span>
-        </section>
+        </div>
         <footer className={data.difference >= 0 ? 'increase' : 'decrease'}>
           <img
             src={data.difference >= 0 ? upArrow : downArrow}
