@@ -79,3 +79,21 @@
 .card-wrapper.youtube {
   background-color: $youtube;
 }
+
+.dashboard.dark {
+  .follower-card {
+    background-color: $dark-desaturated-blue;
+
+    .card-header {
+      .social-handle {
+        color: $desaturated-blue;
+      }
+    }
+
+    section {
+      span {
+        color: $desaturated-blue;
+      }
+    }
+  }
+}

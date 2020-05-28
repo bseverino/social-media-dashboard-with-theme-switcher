@@ -53,3 +53,21 @@
     }
   }
 }
+
+.dashboard.dark {
+  .overview-cards {
+    h2 {
+      color: $desaturated-blue;
+    }
+
+    .overview-card {
+      background-color: $dark-desaturated-blue;
+
+      .overview-left {
+        .overview-type {
+          color: $desaturated-blue;
+        }
+      }
+    }
+  }
+}

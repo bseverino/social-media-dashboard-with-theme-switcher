@@ -17,33 +17,6 @@
         color: $dark-grayish-blue;
       }
     }
-
-    .dark-mode {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 1px solid $dark-grayish-blue;
-      margin-top: 2.5rem;
-      padding: 2.5rem 0;
-      color: $dark-grayish-blue;
-
-      .dark-mode-toggle {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 5rem;
-        height: 2.5rem;
-        padding: 0 0.4rem;
-        background-color: $light-theme;
-        border-radius: 20px;
-        .dark-mode-button {
-          width: 1.8rem;
-          height: 1.8rem;
-          background-color: $white;
-          border-radius: 100%;
-        }
-      }
-    }
   }
 
   .attribution {
@@ -62,19 +35,6 @@
   .title {
     p {
       color: $desaturated-blue;
-    }
-  }
-
-  .dark-mode {
-    border-top: 1px solid $desaturated-blue;
-    color: $desaturated-blue;
-
-    .dark-mode-toggle {
-      justify-content: flex-start;
-      background-image: $dark-theme;
-      .dark-mode-button {
-        background-color: $very-dark-blue;
-      }
     }
   }
 }

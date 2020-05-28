@@ -1,22 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 
+import DarkModeToggle from './dark-mode-toggle'
 import FollowerCards from './follower-cards'
 import OverviewCards from './overview-cards'
 
 function Dashboard() {
+  const [darkMode, setDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+  }
+
   return (
-    <div className='dashboard dark'>
+    <div className={`dashboard ${darkMode && 'dark'}`}>
       <header>
         <div className='title'>
           <h1>Social Media Dashboard</h1>
           <p>Total Followers: 23,004</p>
         </div>
-        <div className='dark-mode'>
-          <label>Dark Mode</label>
-          <div className='dark-mode-toggle'>
-            <div className='dark-mode-button' />
-          </div>
-        </div>
+        <DarkModeToggle toggleDarkMode={toggleDarkMode} />
       </header>
       <main>
         <FollowerCards />

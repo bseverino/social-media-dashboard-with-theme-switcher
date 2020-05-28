@@ -3,7 +3,6 @@ import upArrow from '../img/icon-up.svg'
 import downArrow from '../img/icon-down.svg'
 
 function FollowerCard({ data }) {
-  console.log(data)
   return (
     <div className={`card-wrapper ${data.site}`}>
       <div className='follower-card'>
