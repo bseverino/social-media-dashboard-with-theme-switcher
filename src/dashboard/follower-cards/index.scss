@@ -6,6 +6,14 @@
   margin-bottom: 3rem;
   border-radius: 7px;
 
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .follower-card {
+    background-color: darken($light-grayish-blue, 2%);
+  }
+
   .follower-card {
     display: flex;
     flex-direction: column;
@@ -81,18 +89,24 @@
 }
 
 .dashboard.dark {
-  .follower-card {
-    background-color: $dark-desaturated-blue;
-
-    .card-header {
-      .social-handle {
-        color: $desaturated-blue;
-      }
+  .card-wrapper {
+    &:hover .follower-card {
+      background-color: lighten($dark-desaturated-blue, 2%);
     }
 
-    section {
-      span {
-        color: $desaturated-blue;
+    .follower-card {
+      background-color: $dark-desaturated-blue;
+
+      .card-header {
+        .social-handle {
+          color: $desaturated-blue;
+        }
+      }
+
+      section {
+        span {
+          color: $desaturated-blue;
+        }
       }
     }
   }

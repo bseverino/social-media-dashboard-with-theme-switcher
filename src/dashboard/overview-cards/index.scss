@@ -14,6 +14,11 @@
     padding: 2.5rem;
     margin-bottom: 2.5rem;
 
+    &:hover {
+      cursor: pointer;
+      background-color: darken($light-grayish-blue, 2%);
+    }
+
     .overview-left {
       display: flex;
       flex-direction: column;
@@ -62,6 +67,10 @@
 
     .overview-card {
       background-color: $dark-desaturated-blue;
+
+      &:hover {
+        background-color: lighten($dark-desaturated-blue, 2%);
+      }
 
       .overview-left {
         .overview-type {
