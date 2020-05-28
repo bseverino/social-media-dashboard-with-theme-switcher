@@ -1,63 +1,80 @@
 .overview-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   h2 {
     color: $dark-grayish-blue;
     font-size: 2.5rem;
   }
 
-  .overview-card {
+  .overview-cards-wrapper {
     display: flex;
-    justify-content: space-between;
-    height: 15rem;
-    width: 35rem;
-    background-color: $light-grayish-blue;
-    border-radius: 7px;
-    padding: 2.5rem;
-    margin-bottom: 2.5rem;
+    flex-direction: column;
+    align-items: center;
 
-    &:hover {
-      cursor: pointer;
-      background-color: darken($light-grayish-blue, 2%);
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
     }
 
-    .overview-left {
+    .overview-card {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
+      height: 15rem;
+      width: 35rem;
+      background-color: $light-grayish-blue;
+      border-radius: 7px;
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
 
-      .overview-type {
-        color: $dark-grayish-blue;
+      @media (min-width: $tablet) {
+        max-width: 48%;
       }
 
-      .overview-count {
-        font-size: 4rem;
+      @media (min-width: $desktop) {
+        max-width: 30rem;
       }
-    }
 
-    .overview-right {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-end;
+      &:hover {
+        cursor: pointer;
+        background-color: darken($light-grayish-blue, 2%);
+      }
 
-      .overview-difference {
+      .overview-left {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
 
-        img {
-          padding-right: 0.3rem;
+        .overview-type {
+          color: $dark-grayish-blue;
+        }
+
+        .overview-count {
+          font-size: 4rem;
         }
       }
 
-      .overview-difference.increase {
-        color: $lime-green;
-      }
+      .overview-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
 
-      .overview-difference.decrease {
-        color: $bright-red;
+        .overview-difference {
+          display: flex;
+          align-items: center;
+
+          img {
+            padding-right: 0.3rem;
+          }
+        }
+
+        .overview-difference.increase {
+          color: $lime-green;
+        }
+
+        .overview-difference.decrease {
+          color: $bright-red;
+        }
       }
     }
   }

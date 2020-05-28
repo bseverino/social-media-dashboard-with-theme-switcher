@@ -7,9 +7,11 @@ function OverviewCards() {
   return (
     <div className='overview-cards'>
       <h2>Overview - Today</h2>
-      {overviewData.map((data) => (
-        <OverviewCard data={data} />
-      ))}
+      <div className='overview-cards-wrapper'>
+        {overviewData.map((data) => (
+          <OverviewCard data={data} />
+        ))}
+      </div>
     </div>
   )
 }

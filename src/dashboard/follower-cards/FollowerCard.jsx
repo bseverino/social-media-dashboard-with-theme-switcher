@@ -7,7 +7,11 @@ function FollowerCard({ data }) {
     <div className={`card-wrapper ${data.site}`}>
       <div className='follower-card'>
         <div className='card-header'>
-          <img src={data.icon} className='social-icon' />
+          <img
+            src={data.icon}
+            className='social-icon'
+            alt={`${data.site} icon`}
+          />
           <div className='social-handle'>{data.handle}</div>
         </div>
         <section>
@@ -15,7 +19,10 @@ function FollowerCard({ data }) {
           <span>{data.site === 'youtube' ? 'subscribers' : 'followers'}</span>
         </section>
         <footer className={data.difference >= 0 ? 'increase' : 'decrease'}>
-          <img src={data.difference >= 0 ? upArrow : downArrow} />{' '}
+          <img
+            src={data.difference >= 0 ? upArrow : downArrow}
+            alt={`${data.difference >= 0 ? 'Up' : 'Down'} arrow icon`}
+          />{' '}
           {Math.abs(data.difference)} Today
         </footer>
       </div>
